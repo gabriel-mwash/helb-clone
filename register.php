@@ -1,14 +1,20 @@
-<form action="data.php" method="post">
-   <label for="firstName">
+<?php
+require "header.php";
+require "navigation.php";
+?>
+
+<form class="registration-Form">
+   <div class="group1"><img src="images/GOK_logo.png" alt=""></div>
+   <label for="firstName">FirstName:
       <input type="text" name="firstName">
    </label>
-   <label for="LastName">
+   <label for="LastName">LastName: 
       <input type="text" name="lastName">
    </label>
-   <label for="userEmail">
+   <label for="userEmail">Email
       <input type="email" name="userEmail" placeholder="user@gmail.com">
    </label>
-   <label for="userPassword">
+   <label for="userPassword">Password
       <input type="password" name="userPassword">
    </label>
 </form>

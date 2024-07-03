@@ -1,12 +1,14 @@
 * {
    margin: 0px;
    padding: 0px;
+   font-family: "Open Sans";
 }
 
 body {
    box-sizing: border-box;
    background-color: lightgrey;
-   font-family: "Open Sans"
+   background-image: url("images/bg01.png");
+   font-family: "Open Sans";
 }
 
 /* header section */
@@ -175,14 +177,34 @@ form {
 .group3 p {
    font-size: smaller;
    color: grey;
-
 }
 
 #login {
    background-color: rgb(17, 125, 75);
-
 }
 
 #Register {
    background-color:#1e9ff2
 }
+
+/* sign in form */
+.registration-form {
+   margin: auto;
+}
+
+.registration-Form label {
+   display: flex;
+   margin-left: 2rem;
+   font-size: larger;
+}
+
+.registration-Form input {
+   width: 12vw;
+   height: 2rem;
+   border: 1px solid black;
+   margin-left: 2rem;
+}
+
+
+
+
