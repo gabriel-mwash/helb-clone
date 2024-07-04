@@ -184,27 +184,50 @@ form {
 }
 
 #Register {
-   background-color:#1e9ff2
+   background-color:#1e9ff2;
+   cursor: pointer;
 }
 
-/* sign in form */
-.registration-form {
-   margin: auto;
+.group1 i {
+   position: relative;
+   transform: translateY(-20%);
+   right: 50%;
+
+
+
 }
 
-.registration-Form label {
-   display: flex;
-   margin-left: 2rem;
-   font-size: larger;
+/* register form */
+.register-form ol {
+   list-style: none;
 }
 
-.registration-Form input {
-   width: 12vw;
+.register-form ol > li {
+   display: grid;
+   text-align: center;
+   margin: 0.5rem;
+}
+
+.register-form ol li input, #regPassword{
+   display: grid;
+   width: 70%;
+   height: 1.8rem;
+   margin: 0 auto;
+   border-radius: 0.5rem;
+   font-size: medium;
+   border: 1px solid darkgray;
+}
+
+.register-form ol li input {
+   padding: 0 0 0 12px;
+}
+
+#signUp {
+   margin-top: 0.5rem;
+   background-color: #1e9ff2;
    height: 2rem;
-   border: 1px solid black;
-   margin-left: 2rem;
+   border: none;
+   cursor: pointer;
 }
-
-
 
 
