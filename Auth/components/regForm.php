@@ -1,10 +1,5 @@
-<?php
-require "header.php";
-require "navigation.php";
-?>
-
 <form class="registration-Form">
-   <div class="group1"><img src="images/GOK_logo.png" alt=""></div>
+   <div class="group1"><img src="/Assets/images/GOK_logo.png" alt=""></div>
    <label for="firstName">FirstName:
       <input type="text" name="firstName">
    </label>

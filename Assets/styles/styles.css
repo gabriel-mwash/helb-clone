@@ -1,0 +1,210 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   font-family: "Open Sans";
+}
+
+body {
+   box-sizing: border-box;
+   background-color: lightgrey;
+   background-image: url("/Assets/images/bg01.png");
+   font-family: "Open Sans";
+}
+
+/* header section */
+header {
+   display: block;
+   background-color:#1e9ff2;
+}
+
+.logos {
+   display: flex;
+   margin-left: 50px;
+}
+
+.logos a img {
+   height: 60px;
+   width: 60px;
+   padding: 25px 9px;
+}
+
+.header_info {
+   display: flex;
+   color: white;
+   margin: auto 0px;
+   font-size: large;
+}
+
+/* navigation section */
+.nav_items {
+   display: flex;
+   background-color: #FFBF00;
+   border-top: 10px solid green;
+}
+
+.nav_items a {
+   text-decoration: none;
+   color: black;
+   padding: 25px;
+   font-family: sans-serif;
+}
+
+.nav_items div {
+   padding: 25px;
+}
+
+.nav_items .dropUser .user_registration_dropdown {
+   display: none;
+   position: absolute;
+   margin-top: 1.5rem; padding: 0;
+   border: 1px solid black;
+   border-radius: 4px;
+   background-color: white;
+}
+
+.dropUser:hover .user_registration_dropdown {
+   display: grid;
+   border: none;
+}
+
+.user_registration_dropdown a {
+   padding: 8px 3px 0px;
+   margin: 0.5rem;
+}
+
+.nav_items .dropDoc .documents_dropdown{
+   display: none;
+   position: absolute;
+   margin-top: 1.5rem; padding: 0;
+   border: 1px solid black;
+   border: 1px solid black;
+   border-radius: 4px;
+   background-color: white;
+}
+
+.documents_dropdown a {
+   padding: 8px 3px 0px;
+   margin: 0.5rem;
+}
+
+.dropDoc:hover .documents_dropdown {
+   display: grid;
+}
+
+/* form section */
+
+form {
+   display: box-flex;
+   justify-content: center;
+   width: 30vw;
+   height: 60vh;
+   margin: 30px auto 4px;
+   background-color: white;
+   border-radius: 3px;
+   box-shadow: 0px 0px 10px 2px grey;
+}
+
+.group1 {
+   display: grid;
+   text-align: center;
+}
+
+.group1 img {
+   width: 40px;
+   height: 40px;
+   margin: 15px auto;
+}
+.group1  #p {
+   margin: 20px auto 0px;
+   font-size: smaller;
+   color: grey;
+}
+
+#reg_info {
+   color: black;
+   font-size: large;
+   background-color: rgb(217, 53, 53);
+   border: 1px solid red;
+   height: 35px;
+   border-radius: 3px;
+   margin: 30px 10px 0px;
+}
+
+.group1 input {
+   background-color: lightyellow;
+   height: 40px;
+   border: 1px solid grey;
+   border-radius: 5px;
+}
+
+#mail {
+   margin:25px 10px;
+}
+
+#password {
+   margin:0px 10px;
+}
+
+.group2 {
+   display: flex;
+   margin: 20px 10px;
+}
+
+.group2 p {
+   margin-left: 4px;
+}
+
+.group2 a {
+   margin-left: 195px;
+   text-decoration: none;
+
+}
+
+.group3 {
+   display: grid;
+   text-align: center;
+}
+
+.group3 button {
+   margin: 20px 10px;
+   height: 40px;
+   border: none;
+   border-radius: 5px;
+   color: white;
+   font-size: large;
+}
+
+.group3 p {
+   font-size: smaller;
+   color: grey;
+}
+
+#login {
+   background-color: rgb(17, 125, 75);
+}
+
+#Register {
+   background-color:#1e9ff2
+}
+
+/* sign in form */
+.registration-form {
+   margin: auto;
+}
+
+.registration-Form label {
+   display: flex;
+   margin-left: 2rem;
+   font-size: larger;
+}
+
+.registration-Form input {
+   width: 12vw;
+   height: 2rem;
+   border: 1px solid black;
+   margin-left: 2rem;
+}
+
+
+
+
