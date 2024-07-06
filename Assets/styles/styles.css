@@ -53,10 +53,10 @@ header {
    padding: 25px;
 }
 
-.nav_items .dropUser .user_registration_dropdown {
+.nav_items .dropUser .user_registration_dropdown, .nav_items .dropDoc .documents_dropdown {
    display: none;
    position: absolute;
-   margin-top: 1.5rem; padding: 0;
+   margin-top: 1.3rem; padding: 0;
    border: 1px solid black;
    border-radius: 4px;
    background-color: white;
@@ -72,16 +72,6 @@ header {
    margin: 0.5rem;
 }
 
-.nav_items .dropDoc .documents_dropdown{
-   display: none;
-   position: absolute;
-   margin-top: 1.5rem; padding: 0;
-   border: 1px solid black;
-   border: 1px solid black;
-   border-radius: 4px;
-   background-color: white;
-}
-
 .documents_dropdown a {
    padding: 8px 3px 0px;
    margin: 0.5rem;
@@ -89,16 +79,18 @@ header {
 
 .dropDoc:hover .documents_dropdown {
    display: grid;
+   border: none;
 }
 
-/* form section */
+/*login form */
 
 form {
    display: box-flex;
    justify-content: center;
+   flex-basis: 0;
    width: 30vw;
-   height: 60vh;
-   margin: 30px auto 4px;
+   min-height: 60vh;
+   margin: 30px auto 0px; 
    background-color: white;
    border-radius: 3px;
    box-shadow: 0px 0px 10px 2px grey;
@@ -115,7 +107,7 @@ form {
    margin: 15px auto;
 }
 .group1  #p {
-   margin: 20px auto 0px;
+   margin: 10px auto 0px;
    font-size: smaller;
    color: grey;
 }
@@ -123,18 +115,20 @@ form {
 #reg_info {
    color: black;
    font-size: large;
-   background-color: rgb(217, 53, 53);
+   background-color: #FC8EAC; 
    border: 1px solid red;
-   height: 35px;
+   height: 3rem;
    border-radius: 3px;
-   margin: 30px 10px 0px;
+   margin: 40px 10px 0px;
 }
 
 .group1 input {
-   background-color: lightyellow;
-   height: 40px;
+   height: 50px;
    border: 1px solid grey;
    border-radius: 5px;
+   margin: 2px 0 2px;
+   padding: 0 0 0 3rem; 
+   font-size: medium;
 }
 
 #mail {
@@ -147,18 +141,19 @@ form {
 
 .group2 {
    display: flex;
-   margin: 20px 10px;
+   justify-content: space-between;
+   margin: 0px 2px 0px;
 }
 
-.group2 p {
-   margin-left: 4px;
+.group2 .remember-me {
+   display: flex;
 }
 
 .group2 a {
-   margin-left: 195px;
    text-decoration: none;
-
+   color: #1e9ff2;
 }
+
 
 .group3 {
    display: grid;
@@ -167,11 +162,12 @@ form {
 
 .group3 button {
    margin: 20px 10px;
-   height: 40px;
+   height: 60px;
    border: none;
    border-radius: 5px;
    color: white;
    font-size: large;
+   cursor: pointer;
 }
 
 .group3 p {
@@ -185,16 +181,18 @@ form {
 
 #Register {
    background-color:#1e9ff2;
-   cursor: pointer;
 }
 
 .group1 i {
    position: relative;
-   transform: translateY(-20%);
-   right: 50%;
+   right: 46%;
+   margin: 0; padding: 0;
+   transform: translateY(-2.5rem);
 
+}
 
-
+#user-icon {
+   transform: translateY(-5.5rem);
 }
 
 /* register form */
@@ -225,9 +223,7 @@ form {
 #signUp {
    margin-top: 0.5rem;
    background-color: #1e9ff2;
-   height: 2rem;
+   height: 50px;
    border: none;
    cursor: pointer;
 }
-
-

@@ -21,7 +21,7 @@
          <input id="regPassword" type="password" name="password" placeholder="8-10 characters"
             pattern="^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W]).*$"
             title="password must be 8 or more characters with at least one number, an
-                  uppercase ltter, and one special character">
+               uppercase letter, and one special character">
       </li>
       <li>
          <label for="password_confirmation">Password Confirmation </label>
@@ -29,7 +29,7 @@
             name="password_confirmation" placeholder="type your password again"
             pattern="^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W]).*$"
             title="password must be 8 or more characters with at least one number, an 
-                  uppercase letter, and one special character">
+               uppercase letter, and one special character">
       </li>
       <li><input id="signUp" type="submit" value="sign up"></li>
    </ol>
