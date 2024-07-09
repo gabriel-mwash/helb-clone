@@ -3,9 +3,9 @@
       <div class="group1">
          <img src="/Assets/images/GOK_logo.png" alt="">
          <p id="p">Sign in to your Account</p>
-         <button id="reg_info" disabled>Register if you do not have a login account</button>
+         <button id="reg_info" name="login_user">Register if you do not have a login account</button>
          <input type="mail" name="" id="mail" placeholder="enter email here">
-         <input type="password" name="" id="password" placeholder="enter password here"
+         <input type="password" name="password" id="password" placeholder="enter password here"
             pattern="^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W]).*$"
             title="password must be 8 or more characters with at least one number, an
                   uppercase letter, and one special character">

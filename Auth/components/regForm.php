@@ -1,4 +1,4 @@
-<form class="register-form">
+<form class="register-form" method="post" action="/Auth/regformdata.php">
    <div class="group1">
       <img src="/Assets/images/GOK_logo.png" alt="">
       <p id="p">Sign in to your Account</p>
@@ -31,6 +31,6 @@
             title="password must be 8 or more characters with at least one number, an 
                uppercase letter, and one special character">
       </li>
-      <li><input id="signUp" type="submit" value="sign up"></li>
+      <li><input id="signUp" type="submit" name="register_user" value="sign up"></li>
    </ol>
 </form>
