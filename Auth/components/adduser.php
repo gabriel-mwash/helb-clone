@@ -1,3 +1,4 @@
+<html>hello world</html>
 <?php
 require "./dbconnect.php";
 if (isset($_POST["regiser_user"])) {
@@ -15,4 +16,5 @@ if (isset($_POST["regiser_user"])) {
 }
 
 mysqli_stmt_bind_param($stmt, "ssss", $fistName, $lastName, $email, $passwd);
+
 ?>

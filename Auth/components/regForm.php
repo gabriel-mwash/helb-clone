@@ -1,4 +1,4 @@
-<form class="register-form" method="post" action="/Auth/regformdata.php">
+<form class="register-form" method="post" action="/Auth/components/script.php">
    <div class="group1">
       <img src="/Assets/images/GOK_logo.png" alt="">
       <p id="p">Sign in to your Account</p>

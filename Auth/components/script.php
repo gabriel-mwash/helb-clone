@@ -1,36 +1,57 @@
 <?php
 require "../components/dbconnect.php";
-if (isset($_POST["regiser_user"])) {
-   $conn = mysqli_connect($host, $user, $pssword, $dbname);
 
+$conn = mysqli_connect($host, $user, $pssword, $dbname);
+
+if (!$conn) {
+   echo "the connection failed". mysqli_connect_errno();
+}
+else {
+   echo "<p>connection established successfully</p>";
+}
+
+
+$conn = mysqli_connect($host, $user, $pssword, $dbname);
+
+
+if (isset($_POST["register_user"])) {
    $firstName = $_POST["first_name"];
    $lastName = $_POST["last_name"];
    $email = $_POST["email"];
    $passwd = $_POST["password"];
-
    $stmt = mysqli_prepare(
       $conn, 
-      "insert into helbdb (firstName, LastName, email, password) VALUES (?, ?, ?, ?)"
+      "INSERT INTO userAccounts (firstName, LastName, email, passcode) VALUES (?, ?, ?, ?)"
+      );
+   mysqli_stmt_bind_param(
+      $stmt, "ssss", $firstName, $lastName, $email, $passwd
    );
+
+   mysqli_stmt_execute($stmt);
+   mysqli_close($conn);
 }
 
-   mysqli_stmt_bind_param(
-      $stmt, "ssss", $fistName, $lastName, $email, $passwd
-   );
 
 if (isset($_POST["login_user"])) {
-   $stmt = "select * from helbdb";
-   $result = $conn -> query($sql);
+   $stmt = "SELECT email, passcode FROM userAccounts";
+   $result = mysqli_query($conn, $stmt);
 
-   while ($row = $result -> fetch_assoc()) {
-      if (($email == $row["email"]) && ($password = $row["password"])) {
-         echo "login successfully";
+   $email = $_POST["email"];
+   $password = $_POST["password"];
+
+   while ($row = mysqli_fetch_assoc($result)) {
+      if (($email == $row["email"]) && ($password == $row["passcode"])) {
+         echo (
+            "<script>
+               alert('login successfully!');
+            </script>"
+         );
       }
       elseif (($email != $row["email"])) {
-         echo "enter the correct email";
+         echo "<p>enter the correct email</p>";
       }
-      else {
-         echo "enter the correct password";
+      elseif ($password != $row["passcode"]) {
+         echo "<p>enter the correct password</p>";
       }
    }
 }

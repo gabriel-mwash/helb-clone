@@ -1,10 +1,10 @@
 <body>
-   <form >
+   <form action="/Auth/components/script.php" method="post">
       <div class="group1">
          <img src="/Assets/images/GOK_logo.png" alt="">
          <p id="p">Sign in to your Account</p>
-         <button id="reg_info" name="login_user">Register if you do not have a login account</button>
-         <input type="mail" name="" id="mail" placeholder="enter email here">
+         <button id="reg_info" >Register if you do not have a login account</button>
+         <input type="mail" name="email" id="mail" placeholder="enter email here">
          <input type="password" name="password" id="password" placeholder="enter password here"
             pattern="^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W]).*$"
             title="password must be 8 or more characters with at least one number, an
@@ -20,7 +20,7 @@
          <a href="">Forgot Password?</a>
       </div>
       <div class="group3">
-         <button id="login">Login</button>
+         <button id="login" type="submit" name="login_user">Login</button>
          <p>Don't Have An Account ?</p>
          <button id="Register" onclick="registerPage()" type="button">Register</button>
       </div>
