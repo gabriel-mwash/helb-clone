@@ -26,4 +26,5 @@
       </div>
    </form>
    <script src="/scripts/redirect.js"></script>
+   <script src="/scripts/validatepassword.js"></script>
 </body>

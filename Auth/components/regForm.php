@@ -33,4 +33,5 @@
       </li>
       <li><input id="signUp" type="submit" name="register_user" value="sign up"></li>
    </ol>
+   <script src="/scripts/validatepassword.js"></script>
 </form>
